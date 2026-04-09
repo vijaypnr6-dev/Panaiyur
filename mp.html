@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Edit - Official Website</title>
+    <style>
+        /* 3D-like animated background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #ff6a00, #ee0979, #00f260, #0575e6);
+            background-size: 800% 800%;
+            animation: gradientAnimation 20s ease infinite;
+            color: #fff;
+        }
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header img {
+            width: 150px; /* Adjusted logo size */
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px; /* Optional: gives logo rounded edges */
+        }
+
+        nav {
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Replace 'logo.png' with your new logo -->
+    <img src="data:image/jpeg;base64,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" alt="Vijay Edit Logo">
+    <h1>Vijay Edit - Professional Editor</h1>
+    <p>Refining words, shaping stories</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Vijay Edit, a professional editor with over 10 years of experience in editing articles, books, and digital content. I help writers refine their work and bring clarity to their ideas.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Photo Editing</li>
+            <li>Video Editing</li>
+            <li>Oil  Painting</li>
+            <li>Video Creating</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vijay@example.com">vijay@example.com</a></p>
+        <p>Phone: +1-234-567-8901</p>
+        <p>Follow me on social media:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/@yourchannel" target="_blank">YouTube</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Vijay Edit. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
